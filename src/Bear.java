@@ -1,7 +1,7 @@
 import java.awt.*;
 
 public class Bear extends Critter {
-    private boolean sign = true;
+    private boolean signSlash = true;
     private boolean polar;
 
     public Bear(boolean polar){
@@ -18,7 +18,7 @@ public class Bear extends Critter {
         } else {
             action = Action.RIGHT;
         }
-        sign = !sign;
+        signSlash = !signSlash;
         return action;
     }
 
@@ -27,6 +27,6 @@ public class Bear extends Critter {
     }
 
     public String toString() {
-        return sign ? "/" : "\\";
+        return signSlash ? "/" : "\\";
     }
 }
